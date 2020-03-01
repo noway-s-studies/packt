@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+  enteredValue = '';
   newPost = '';
 
-  onAddPost(newPost: HTMLTextAreaElement) {
-    console.dir(newPost);
-    this.newPost = newPost.value;
+  onAddPost() {
+    this.newPost = this.enteredValue;
   }
 }
