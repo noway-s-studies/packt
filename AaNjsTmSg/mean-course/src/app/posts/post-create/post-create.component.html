@@ -1,1 +1,5 @@
 <h2>Post-Create Component</h2>
+<textarea [value]="newPost" #postImput cols="30" rows="10"></textarea>
+<hr>
+<button (click)="onAddPost(postImput)">Save Post</button>
+<p>{{newPost}}</p>

@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+  newPost = '';
 
+  onAddPost(newPost: HTMLTextAreaElement) {
+    console.dir(newPost);
+    this.newPost = newPost.value;
+  }
 }
